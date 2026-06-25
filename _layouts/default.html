@@ -148,7 +148,18 @@
       "url": "{{ site.baseurl }}/"
     },
     "publisher": {"@type": "Person", "name": "{{ site.author }}"},
-    "url": "{{ page.url | absolute_url }}"
+    "url": "{{ page.url | absolute_url }}",
+    "articleBody": "{{ page.content | strip_html | normalize_whitespace | truncate: 2000 | escape }}",
+    "wordCount": "{{ page.content | number_of_words }}",
+    {% if page.klant %}"about": {
+      "@type": "Organization",
+      "name": "{{ page.klant | escape }}"
+    },{% endif %}
+    {% if page.geldig_tot %}"expires": "{{ page.geldig_tot | date_to_xmlschema }}",{% endif %}
+    {% if page.type %}"articleSection": "{{ page.type | escape }}",{% endif %}
+    "mentions": [
+      {% if page.klant %}{"@type": "Organization", "name": "{{ page.klant | escape }}"}{% endif %}
+    ]
   }
   </script>
   {% endif %}
