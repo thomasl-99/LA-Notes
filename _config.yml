@@ -1,22 +1,25 @@
 ---
 # Jekyll-config voor GitHub Pages — minimale setup
 # Theme: minimaal, geen externe dependencies
-# Live: https://tjdlangeberg.github.io/LA-Notes/
+# Live: https://thomasl-99.github.io/LA-Notes/
 
 title: LA Notes
-tagline: Notities van Thomas Langeberg
+tagline: AI-vindbaarheid voor eenmanszaken
 description: >-
-  Persoonlijk blog — horeca, wijnimport, AI-vindbaarheid,
-  productontwerp, ondernemerschap.
+  Resultaten van AI-vindbaarheid-trajecten: citaten in ChatGPT, Perplexity,
+  Google AI Overviews voor restaurants, importeurs en kleine diensten.
 author: Thomas Langeberg
 email: zie humans.txt
-url: https://tjdlangeberg.github.io
+url: https://thomasl-99.github.io
 baseurl: /LA-Notes
 
 # Markdown rendering
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
+
+# Theme
+theme: minima
 
 # Front-matter defaults voor posts
 defaults:
