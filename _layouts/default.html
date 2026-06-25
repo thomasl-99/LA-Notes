@@ -118,6 +118,53 @@
       font-size: 0.95em;
       color: var(--muted);
     }
+    .breadcrumbs ol {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1rem 0;
+      font-size: 0.85em;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+    .breadcrumbs li:not(:last-child)::after {
+      content: "›";
+      margin-left: 0.5rem;
+      color: var(--muted);
+    }
+    .breadcrumbs a {
+      color: var(--link);
+      text-decoration: none;
+    }
+    .breadcrumbs [aria-current="page"] {
+      color: var(--fg);
+    }
+    .see-also {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+    .see-also h2 {
+      font-size: 1.2em;
+      margin-bottom: 1rem;
+    }
+    .see-also ul {
+      list-style: none;
+      padding: 0;
+    }
+    .see-also li {
+      margin-bottom: 0.6rem;
+      padding-left: 1rem;
+      border-left: 2px solid var(--border);
+    }
+    .see-also a {
+      color: var(--link);
+      text-decoration: none;
+    }
+    .see-also small {
+      color: var(--muted);
+    }
     footer {
       margin-top: 4rem;
       padding-top: 2rem;

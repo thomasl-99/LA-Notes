@@ -3,11 +3,44 @@ layout: default
 ---
 
 <article>
+  {% if page.klant or page.type %}
+  <nav class="breadcrumbs" aria-label="Kruimelpad">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="{{ site.baseurl }}/"><span itemprop="name">Home</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      {% if page.klant %}
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="{{ site.baseurl }}/klanten/{{ page.klant }}/"><span itemprop="name">{{ page.klant | capitalize }}</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      {% assign pos = 3 %}
+      {% else %}
+      {% assign pos = 2 %}
+      {% endif %}
+      {% if page.type %}
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="{{ site.baseurl }}/type/{{ page.type }}/"><span itemprop="name">{{ page.type | capitalize }}</span></a>
+        <meta itemprop="position" content="{{ pos }}" />
+        {% assign pos = pos | plus: 1 %}
+      </li>
+      {% endif %}
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" aria-current="page">
+        <span itemprop="name">{{ page.title }}</span>
+        <meta itemprop="position" content="{{ pos }}" />
+      </li>
+    </ol>
+  </nav>
+  {% endif %}
+
   <header>
     <h1>{{ page.title }}</h1>
     <div class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
       {% if page.sector %} · {{ page.sector }}{% endif %}
+      {% if page.klant %} · {{ page.klant | capitalize }}{% endif %}
+      {% if page.type %} · {{ page.type }}{% endif %}
     </div>
     {% if page.ai_summary %}
     <div class="ai-summary">
@@ -17,6 +50,40 @@ layout: default
   </header>
 
   {{ content }}
+
+  {% comment %}
+  === ZIE OOK ===
+  Automatische interne links op basis van:
+  - Zelfde klant (indien page.klant)
+  - Zelfde type (nieuwsbrief/maandelijks/persbericht/evenement)
+  - Zelfde tags
+  Beperkt tot 5, gesorteerd op datum (nieuwste eerst).
+  {% endcomment %}
+  {% assign gerelateerd = "" | split: "" %}
+  {% if page.klant %}
+    {% assign zelfde_klant = site.posts | where: "klant", page.klant | where_exp: "p", "p.url != page.url" %}
+    {% assign gerelateerd = gerelateerd | concat: zelfde_klant %}
+  {% endif %}
+  {% if page.type %}
+    {% assign zelfde_type = site.posts | where: "type", page.type | where_exp: "p", "p.url != page.url" %}
+    {% assign gerelateerd = gerelateerd | concat: zelfde_type %}
+  {% endif %}
+  {% assign gerelateerd = gerelateerd | uniq | sort: "date" | reverse %}
+  {% assign count = 0 %}
+  {% if gerelateerd.size > 0 %}
+  <section class="see-also" aria-labelledby="see-also-title">
+    <h2 id="see-also-title">Zie ook</h2>
+    <ul>
+    {% for post in gerelateerd limit:5 %}
+      {% assign count = count | plus: 1 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <small> — {{ post.date | date: "%-d %b %Y" }}{% if post.klant and post.klant != page.klant %} · {{ post.klant | capitalize }}{% endif %}{% if post.type and post.type != page.type %} · {{ post.type }}{% endif %}</small>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
 
   {% if page.trefwoorden %}
   <footer style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border);">
