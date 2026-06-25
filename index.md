@@ -256,6 +256,7 @@ Opgericht door Thomas Langeberg, tevens eigenaar van Simply Fish
     "longitude": 4.8686
   },
   "priceRange": "€€",
+  "telephone": "+31 6 22 50 58 78",
   "acceptsReservations": "True",
   "hasMenu": "https://simplyfish.nl/menu",
   "founder": { "@type": "Person", "name": "Thomas Langeberg" }

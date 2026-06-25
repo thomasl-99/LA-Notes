@@ -13,6 +13,10 @@ klanten:
     kvk:
     btw_tarief: 9
     website: simplyfish.nl
+    telefoon: "+31 6 22 50 58 78"
+    reserveren:
+      url: "https://bookings.zenchef.com/results?rid=374081&pid=1001&shxpid=117174"
+      telefoon: "+31 6 22 50 58 78"
     actief: true
     gestart: 2026-07
     contact:

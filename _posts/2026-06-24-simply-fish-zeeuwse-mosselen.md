@@ -39,9 +39,13 @@ bij dit weer: **op het terras** (38 zitplaatsen).
 
 ## Aanmelden / meer info
 
-Geen aanmelding nodig. Reserveren voor het terras: bel
-020-XXX-XX-XX of stuur een bericht. Door de weeks is er meestal plek;
-in het weekend liever even bellen.
+Geen aanmelding nodig voor de mosselen. **Reserveren voor een tafel:**
+
+- Online: [bookings.zenchef.com/results?rid=374081](https://bookings.zenchef.com/results?rid=374081&pid=1001&shxpid=117174)
+- Telefoon: +31 6 22 50 58 78
+
+Door de weeks is er meestal plek; in het weekend liever even bellen of
+online reserveren.
 
 ## Bijzonderheden
 
