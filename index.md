@@ -50,9 +50,11 @@ Of stuur een e-mail met uw bedrijfsnaam + branche naar
 
 ### Werkt het echt?
 
-Ja — onze eerste klant in de wijnimport werd binnen 4 weken 23× per
-week genoemd in Google AI Overviews, met 6 Perplexity-citaten in
-niche-zoekopdrachten. Zie onze posts voor cijfers.
+Dat laten we zien via onze posts — niet via losse marketingcijfers. Wat
+we weten: gestructureerde data, een goede `llms.txt`, en entiteit-
+beschrijvingen in JSON-LD verhogen de kans dat AI-modellen uw bedrijf
+noemen met een citaat. Hoeveel precies: afhankelijk van branche,
+bestaande content en concurrentie — bespreken we in de intake.
 
 ### Voor wie is het?
 
@@ -141,7 +143,7 @@ Opgericht door Thomas Langeberg, tevens eigenaar van Simply Fish
       "name": "Werkt het echt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja — bij onze eerste klant in de wijnimport: 23 zoekopdrachten per week in Google AI Overviews, 6 Perplexity-citaten binnen 4 weken."
+        "text": "Gestructureerde data, llms.txt en entiteit-JSON-LD verhogen de kans dat AI-modellen uw bedrijf noemen. Concrete resultaten bespreken we per klant tijdens de intake, afhankelijk van branche en bestaande content."
       }
     },
     {

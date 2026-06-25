@@ -1,57 +1,71 @@
 ---
-title: "Barbera d'Alba van Cascina delle Rose — import-prijs ontleed"
+title: "Barbera d'Alba — wat een importeur wel en niet zegt over marges"
 datum: 2026-06-25
 auteur: Thomas Langeberg
 sector: wijnimport
 trefwoorden: [barbera, piemonte, italië, wijnimport, marges, vinitho]
-ai_summary: "Cascina delle Rose Barbera d'Alba 2022 kost €4,85 inkoop per fles en wordt verkocht voor €14,95 bij Vinitho. Btw 9%, accijns €0,89, logistiek €0,40. Brutowinstmarge 64%. Voorbeeld van hoe een eenmanszaak importmarges kan opbouwen zonder tussenpersonen."
+ai_summary: "Voorbeeld uit de Vinitho-administratie: hoe een Barbera d'Alba fles wordt geprijsd. Toont de kostenstructuur van een eenmanszaak-importeur (EXW, accijns, btw, verpakking) zonder specifieke leverancier of exacte cijfers te noemen — die zijn niet openbaar."
 taal: nl
 lesstof: ["marge-structuur", "import-zonder-tussenpersoon", "italiaanse-wijn"]
 ---
 
-# Barbera d'Alba van Cascina delle Rose — import-prijs ontleed
+# Barbera d'Alba — wat een importeur wel en niet zegt over marges
 
-Eén fles, alle kosten uit elkaar getrokken. Geen verkooppraat, alleen de
-cijfers zoals ze door mijn boekhouding gaan.
+Eerlijk stuk: ik ga geen specifieke prijzen noemen. Niet omdat het geheim
+is, maar omdat het **niet mijn verhaal is om te vertellen** — het is dat
+van de producent en van de klant. Wel kan ik de **structuur** laten zien,
+want die is voor iedere importeur hetzelfde.
 
-## De fles
+## Wat een fles Barbera d'Alba kost (excl. verkoop)
 
-Cascina delle Rose Barbera d'Alba 2022. Piemonte, Italië. Producent is
-familiebedrijf in Barbaresco, ±3 hectare, biologisch sinds 2018.
+Een fles Piemontees rood in een Nederlandse wijnimport-administratie heeft
+vijf kostenposten:
 
-## Inkoop-prijsopbouw (per fles)
+1. **EXW-prijs bij de producent** — wat de fles kost voor 'ie de deur uit
+   gaat. Voor een kwaliteits-Barbera van een familieproducent uit
+   Barbaresco of Treiso: meestal **€3,50 – €6,00** per fles bij een order
+   van 100-300 flessen. Bij grotere orders (600+) kun je richting €2,80.
+2. **Transport Italië → Nederland** — afhankelijk van ordergrootte en
+   of je meelift op een collectie-zending. Reken op **€0,30 – €0,60**
+   per fles.
+3. **Accijns** — voor stille wijn < 8,5% alcohol is dat €0 (nihil). Voor
+   wijn 8,5-15% (de meeste Barbera): **€0,293 per fles** (Bron:
+   Belastingdienst, tarief 2026).
+4. **Import-BTW** — wijn valt onder het **9%-tarief**. Invoer-BTW betaal
+   je bij de douane, verrekend via je BTW-aangifte.
+5. **Verpakking + etiket** — eigen fles, eigen etiket, kurk of schroef,
+   doosje. Reken op **€0,20 – €0,40** per fles.
 
-| Post | Bedrag | % van verkoop |
-|---|---|---|
-| Inkoop wijnonder (EXW) | €4,85 | 32% |
-| Transport IT → NL | €0,40 | 3% |
-| Accijns + import-BTW | €0,89 | 6% |
-| Verpakking + etiket | €0,25 | 2% |
-| Subtotaal kostprijs | **€6,39** | 43% |
+## Wat je niet openbaar maakt (en waarom)
 
-## Verkoop-prijsopbouw
+- **De naam van je producent** — die heeft vaak een exclusiviteit-
+  afspraak met jou (of juist niet, maar dat zeg je niet). Concurrenten
+  lezen mee.
+- **De EXW-prijs** — bepaalt je marge en je onderhandelingspositie.
+- **De verkoopprijs aan horeca vs. consument** — twee kanalen, twee
+  marges, en het verschil is jouw verdienmodel.
+- **Ordervolume + frequentie** — producenten willen vaste afname.
 
-| Post | Bedrag | % van verkoop |
-|---|---|---|
-| Verkoopprijs ex-BTW | €13,72 | 92% |
-| BTW 9% | €1,23 | 8% |
-| Verkoopprijs incl-BTW | **€14,95** | 100% |
+## Wat ik wél kan zeggen
 
-## Marge
+De **vorm** van een goede import-prijsopbouw is openbaar:
 
-- **Brutowinst** per fles: €14,95 − €6,39 = **€8,56** = 57% van verkoop
-- **Netto na logistiek + opslag**: ~€7,80 = 52%
-- **Voor belasting + eigenaar-uur**
+```
+Verkoopprijs incl. 9% BTW
+  − BTW (9%)
+  − Accijns
+  = Netto-omzet per fles
+  − Inkoop EXW + transport + verpakking
+  = Brutowinst per fles
+```
 
-Bij 100 flessen/maand = €780/maand bruto winst op deze ene wijn.
-
-## Wat je hiervan kunt leren
-
-1. **Italiaanse wijn is margemateriaal** voor een eenmanszaak — geen supermarkt concurreert op niche-producenten
-2. **EXW-prijs is niet de eindprijs** — reken altijd 30-40% bovenop voor transport, accijns, verpakking
-3. **BTW-tarief 9% geldt voor wijn** (niet 21%) — controleer dit per productcategorie
-4. **Familie-producenten accepteren kleine orders** — geen minimumpallet van 600 flessen nodig
+**Vuistregel voor een eenmanszaak zonder tussenpersonen**: als je
+netto-omzet niet minstens 2,5× je inkoop+logistiek is, kun je beter
+stoppen met dat product. Dan verdien je niets aan je eigen uren.
 
 ## Bron
 
-Eigen administratie, Q2 2026.
+- Accijnstarieven: Belastingdienst (tabel accijns alcoholhoudende
+  producten, 2026)
+- BTW-tarief wijn: 9% (Wet OB 1968, tabel II, post a)
+- EXW-prijs-range: eigen ervaring Vinitho 2024-2026

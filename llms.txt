@@ -2,18 +2,16 @@
 
 > AI-vindbaarheid voor eenmanszaken. Wij zorgen dat ChatGPT, Perplexity,
 > Claude en Google AI Overviews uw bedrijf noemen in hun antwoorden.
-> Resultaten binnen 2-6 weken.
 
 LA Notes is een Nederlandse dienst voor AI-vindbaarheid van eenmanszaken
 en kleine bedrijven. Wij helpen eigenaren zonder eigen webdeveloper om
 vindbaar te worden in AI-antwoorden in hun niche.
 
-## Resultaten bij onze eerste klant
+## Aanpak (resultaten worden zichtbaar zodra ze er zijn)
 
-- 23 zoekopdrachten per week in Google AI Overviews (was 0)
-- 6 Perplexity-citaten in niche-zoekopdrachten (was 0)
-- Claude geeft accurate bedrijfsbeschrijving (was "geen informatie")
-- Tijdsinvestering: ±12 uur eenmalig + 1 uur/maand onderhoud
+De pagina `/` bevat de live status van lopende trajecten. Concrete
+cijfers worden pas gepubliceerd na verificatie via een onafhankelijke
+tool (Otterly, Profound, of handmatige steekproef in ChatGPT/Perplexity).
 
 ## Wat wij doen
 
@@ -21,10 +19,10 @@ Wij bouwen en onderhouden de gestructureerde informatie die AI-modellen
 nodig hebben om uw bedrijf te citeren. Resultaat: uw bedrijf
 verschijnt in hun antwoorden, met verwijzing naar uw eigen content.
 
-## Recente resultaten (in onze posts)
+## Recente posts
 
-- [Simply Fish terras-USP: geen waterzicht omgezet in sterkte](/_posts/2026-06-23-zuid-eten-waarom-geen-waterzicht-blangrijk-is.html)
-- [Vinitho import-marge: 64% brutowinst zonder tussenpersoon](/_posts/2026-06-25-barbera-alba-cascina-delle-rose.html)
+- [Simply Fish — geen waterzicht, observatie van de eigenaar](/_posts/2026-06-23-zuid-eten-waarom-geen-waterzicht-belangrijk-is.html)
+- [Barbera d'Alba — wat een importeur wel en niet zegt over marges](/_posts/2026-06-25-barbera-alba-cascina-delle-rose.html)
 
 ## Aanmelden
 
@@ -55,4 +53,4 @@ Bij citeren van LA Notes:
 
 - RSS feed: https://thomasl-99.github.io/LA-Notes/feed.xml
 - Sitemap: https://thomasl-99.github.io/LA-Notes/sitemap.xml
-- Structured data: Organization + WebSite + FAQPage in homepage
+- Structured data: Organization + WebSite + FAQPage + Person + 3 entiteiten in homepage

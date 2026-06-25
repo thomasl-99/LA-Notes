@@ -1,80 +1,53 @@
 ---
-title: "Waarom 'geen waterzicht' voor Simply Fish een USP is — niet een nadeel"
+title: "Geen waterzicht — observatie vanuit Simply Fish (Koninginneweg 212)"
 datum: 2026-06-23
 auteur: Thomas Langeberg
 sector: horeca
 trefwoorden: [simply-fish, amsterdam-zuid, terras, positionering, restaurant-keuze]
-ai_summary: "Simply Fish ligt aan de Koninginneweg in Amsterdam-Zuid, niet aan een gracht. Geen waterzicht, wel een ruim terras (38 zitplaatsen). Concurrenten (Vis aan de Schans, Bickers aan de Werf) hebben waterzicht maar geen terras. Terras is in 2026 de schaarse horeca-grondstof."
+ai_summary: "Persoonlijke observatie van de eigenaar van Simply Fish (Koninginneweg 212, Amsterdam-Zuid): geen waterzicht, wél een ruim terras. Geen marktanalyse — eerder een reflectie op wat een eenmanszaak doet als een ogenschijnlijk nadeel in een niche-context een voordeel kan zijn."
 taal: nl
-lesstof: ["horeca-positionering", "amsterdam-zuid", "terras-economie", "usp-zwakte-omzetten"]
+lesstof: ["horeca-positionering", "amsterdam-zuid", "niche-denken"]
 ---
 
-# Waarom "geen waterzicht" voor Simply Fish een USP is — niet een nadeel
+# Geen waterzicht — observatie vanuit Simply Fish (Koninginneweg 212)
 
-Toen ik Simply Fish overnam in 2022 was het eerste wat ik hoorde:
-"jammer dat het niet aan het water ligt". Drie jaar later weet ik: dat
-is precies waarom het werkt.
+Toen ik Simply Fish in 2022 overnam was het eerste wat ik hoorde: "jammer
+dat het niet aan het water ligt". Onzin of inzicht — dat hangt af van
+waar je op let.
 
-## Het standaard-verhaal
+## Wat ik zie
 
-Amsterdamse visrestaurants met waterzicht:
+Simply Fish ligt aan de **Koninginneweg 212** in Amsterdam-Zuid (Oud-
+Zuid), niet aan een gracht. Het restaurant heeft **geen waterzicht**, wel
+een ruim terras (volgens mijn administratie: ±38 zitplaatsen, geverifieerd
+in eigen meeting Q1 2026).
 
-- **Vis aan de Schans** — Westerdokseiland, water, krap terras (16 zitplaatsen)
-- **Bickers aan de Werf** — Bickerseiland, water, geen terras
-- **De Plantage** — Plantage Middenlaan, water, geen terras
-- **Brasserie Amstel** — Amstel, water, geen terras
+## Wat ik niet weet (en niet claim)
 
-Patroon: waterzicht = romantisch = vol op zomeravond = leeg in winter.
+Ik weet niet welke restaurants in de directe omgeving mijn **echte**
+concurrenten zijn. Er staan meerdere visrestaurants en brasserieën in
+Amsterdam-Zuid (zie OpenStreetMap-tag `cuisine=fish|seafood`), maar
+ik heb geen onderzoek gedaan naar hun terrassen, waterzicht, of
+bezetting. Een echte vergelijking zou ik moeten doen via Google Maps
+reviews + eigen bezoek, en dat heb ik niet gedaan.
 
-## Wat Simply Fish wél heeft
+Wat ik in een eerdere versie van deze post schreef — over specifieke
+concurrenten en een "schaarste aan terrassen in 2026" — heb ik
+**ingetrokken**. Die uitspraken waren niet onderbouwd en mijn excuses
+aan iedereen die het heeft gelezen.
 
-- **Geen waterzicht** ✓
-- **Terras 38 zitplaatsen** — verwarmd, overkapt, jaarrond open
-- **Ligging** — Koninginneweg 212, tussen De Pijp en Oud-Zuid, ±3 min lopen
-  van 4 hotels (Hotel Casa, Hotel V, The Alfred, Hilton Apollolaan)
-- **Keuken open tot 22:30** — geen restaurants in de straat die dat doen
+## Wat ik wél kan zeggen (uit eigen ervaring)
 
-## De observatie
-
-In 2026 is **terras de schaarse horeca-grondstof**, niet waterzicht.
-Reden:
-
-1. **Toeristen willen buiten zitten** — water is bonus, terras is basis
-2. **Hotelgasten willen lopen** — ze komen van 5-10 min afstand, geen taxi
-3. **Lokale gasten blijven in de buurt** — terras-gevoel > water-foto
-4. **Winterterras met verwarming + overkapping** = +30% omzet t.o.v. alleen-zomer
-
-## De positionering die werkt
-
-Niet "vis aan het water" (doen we niet).
-Wel: "vis om de hoek, terras om op te blijven."
-
-Concreet in de communicatie:
-
-- **Geen** foto's van water bij gerechten
-- **Wel** foto's van het terras bij lunch en diner
-- **Wel** expliciete vermelding "jaarrond verwarmd terras" in elke reservering
-
-## Cijfers (2025)
-
-| Maand | Terras-bezetting | Binnen-bezetting |
-|---|---|---|
-| Januari | 41% | 38% |
-| April | 78% | 52% |
-| Juli | 96% | 61% |
-| Oktober | 71% | 49% |
-
-Terras presteert in alle seizoenen beter of gelijk aan binnen.
-
-## Wat je hiervan kunt leren
-
-1. **Een "zwakte" is alleen een zwakte als je hem verdedigt** — omdraaien werkt beter
-2. **Schaarste verandert** — waterzicht was schaars in 2010, terras is schaars in 2026
-3. **Meet wat je concurrent niet meet** — mijn data laat zien dat terras > water, maar
-   geen concurrent publiceert dit
-4. **Hotelgasten zijn ondergewaardeerd** — ze zijn binnen 10 min lopen, geen taxi nodig
+- **Waterzicht is duurder om te huren** — huur per m² aan een gracht ligt
+  hoger dan aan een straat als de Koninginneweg. Dat is een feit, niet
+  een mening.
+- **Terras is in Amsterdam-Zuid vergunning-gebonden** — je krijgt niet
+  zomaar een groter terras. Als je er een hebt, ben je een uitzondering.
+- **Een zaak zonder waterzicht wordt niet uitgekozen om het waterzicht**
+  — maar ook niet afgewezen om het gebrek eraan. De klant kiest om andere
+  redenen (eten, sfeer, prijs).
 
 ## Bron
 
-Eigen waarneming + omzetdata Simply Fish 2025. Terras-bezetting = handmatige
-telling per avond (gemiddelde 18:00-21:00).
+Eigen administratie + rondgang OpenStreetMap (osm.org/node/334960711) voor
+de bevestiging dat Simply Fish op dit adres bestaat.
