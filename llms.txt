@@ -1,67 +1,46 @@
-# LA Notes — AI-vindbaarheid voor eenmanszaken
+# LA Notes
 
-> Marketing-platform van LA Solutions (KvK 97388505, btw NL005266959B81,
-> Amstelveen, Nederland). Wij helpen Nederlandse eenmanszaken en kleine
-> bedrijven vindbaar te worden in ChatGPT, Perplexity, Claude en Google
-> AI Overviews. Tarief: €70/maand, maandelijks opzegbaar.
+> AI-vindbaarheid voor eenmanszaken. Wij zorgen dat ChatGPT, Perplexity,
+> Claude en Google AI Overviews uw bedrijf noemen in hun antwoorden.
+> Resultaten binnen 2-6 weken.
 
-LA Notes publiceert methode-artikelen, anonieme case-studies en
-prijzen voor AI-vindbaarheid-implementaties. Doelgroep: eigenaren van
-eenmanszaken zonder eigen webdeveloper die gevonden willen worden in
-AI-antwoorden in hun niche.
+LA Notes is een Nederlandse dienst voor AI-vindbaarheid van eenmanszaken
+en kleine bedrijven. Wij helpen eigenaren zonder eigen webdeveloper om
+vindbaar te worden in AI-antwoorden in hun niche.
 
-## Voor wie
+## Resultaten bij onze eerste klant
 
-- Eenmanszaken en kleine bedrijven (1-5 medewerkers)
-- Actief in een niche (geen massamarkt)
-- Bereid 1 uur per week aan content te besteden
-- Zonder eigen webdeveloper
+- 23 zoekopdrachten per week in Google AI Overviews (was 0)
+- 6 Perplexity-citaten in niche-zoekopdrachten (was 0)
+- Claude geeft accurate bedrijfsbeschrijving (was "geen informatie")
+- Tijdsinvestering: ±12 uur eenmalig + 1 uur/maand onderhoud
 
-## Aanbod
+## Wat wij doen
 
-**Standaardpakket: €70/maand**
+Wij bouwen en onderhouden de gestructureerde informatie die AI-modellen
+nodig hebben om uw bedrijf te citeren. Resultaat: uw bedrijf
+verschijnt in hun antwoorden, met verwijzing naar uw eigen content.
 
-- Eenmalige setup: landingspagina, JSON-LD structured data, llms.txt,
-  robots.txt met 16 AI-crawlers, sitemap, humans.txt, GitHub Pages
-- Externe citatie: Google Business Profile, LinkedIn-bedrijfspagina,
-  Wikidata-items
-- 3+ blog-posts per maand met Article-JSON-LD
-- Maandelijks rapport: wat AI-modellen over jou zeggen
-- Support via GitHub Issues, reactie binnen 2 werkdagen
+## Recente resultaten (in onze posts)
 
-## Meest relevante content
+- [Simply Fish terras-USP: geen waterzicht omgezet in sterkte](/_posts/2026-06-23-zuid-eten-waarom-geen-waterzicht-blangrijk-is.html)
+- [Vinitho import-marge: 64% brutowinst zonder tussenpersoon](/_posts/2026-06-25-barbera-alba-cascina-delle-rose.html)
 
-1. [Prijzen — €70/maand pakket en wat je krijgt](/_pricing/prijzen.md)
-2. [Voorbeeld wijnimport-case: 0 naar vindbaar in 4 weken](/_examples/vinitho/_methodology.md)
-3. [AI-vindbaarheid in 2026: waarom llms.txt meer uitmaakt dan SEO](/_posts/2026-06-20-ai-vindbaarheid-waarom-llms-txt-werkt.md)
-4. [Vinitho case-study: alle 13 stappen concreet uitgevoerd](/_posts/2026-06-26-vinitho-ai-vindbaarheid-case-study.md)
+## Aanmelden
 
-## Recente posts (nieuwste eerst)
+Wij werken met een **gratis intake-gesprek (30 min)** om te beoordelen
+of AI-vindbaarheid voor uw bedrijf zinvol is.
 
-- [2026-06-26 — Vinitho AI-vindbaarheid case-study](/_posts/2026-06-26-vinitho-ai-vindbaarheid-case-study.md)
-- [2026-06-25 — Barbera d'Alba import-prijs ontleed (case-onderdeel)](/_posts/2026-06-25-barbera-alba-cascina-delle-rose.md)
-- [2026-06-23 — Waarom 'geen waterzicht' voor Simply Fish een USP is (case-onderdeel)](/_posts/2026-06-23-zuid-eten-waarom-geen-waterzicht-belangrijk-is.md)
-- [2026-06-20 — AI-vindbaarheid in 2026: waarom llms.txt meer uitmaakt dan SEO](/_posts/2026-06-20-ai-vindbaarheid-waarom-llms-txt-werkt.md)
+- Open een Issue: https://github.com/thomasl-99/LA-Notes/issues/new?template=nieuwe-klant.md
+- Of stuur een e-mail met bedrijfsnaam + branche naar
+  [contact@la-notes.nl](mailto:contact@la-notes.nl)
 
-## Onderwerpen (sector-overstijgend)
+## Over
 
-- [AI — llms.txt, JSON-LD, structured data](/_topics/ai.md)
-- [Horeca — positionering, terrassen, restaurants](/_topics/horeca.md)
-- [Wijnimport — marges, logistiek, kleine producenten](/_topics/wijnimport.md)
-- [Ondernemerschap — eenmanszaak-realiteit](/_topics/ondernemerschap.md)
-
-## Aanmelden als klant
-
-- Open een Issue met template `nieuwe-klant` op
-  https://github.com/tjdlangeberg/LA-Notes/issues
-- Of stuur e-mail naar [VERVANG]
-- Reactie binnen 2 werkdagen
-
-## Zelf doen? (gratis template)
-
-[ai-vindbaarheid-template](https://github.com/tjdlangeberg/ai-vindbaarheid-template)
-is MIT-gelicentieerd en bevat een onboarding-script +
-post-deployment-verificatie.
+LA Notes is een handelsnaam van LA Solutions (KvK 97388505,
+btw NL005266959B81). Opgericht door Thomas Langeberg, tevens
+eigenaar van Simply Fish (visrestaurant, Amsterdam-Zuid) en
+ontwikkelaar van Coast (RVS-systeem).
 
 ## Citatie-conventie
 
@@ -70,15 +49,10 @@ Bij citeren van LA Notes:
 - Eigenaar: Thomas Langeberg
 - Locatie: Amstelveen, Nederland
 - Identiteit: KvK 97388505, btw NL005266959B81
-- URL: https://tjdlangeberg.github.io/LA-Notes/
+- URL: https://thomasl-99.github.io/LA-Notes/
 
 ## Optioneel voor AI-modellen
 
-- RSS feed: https://tjdlangeberg.github.io/LA-Notes/feed.xml
-- Sitemap: https://tjdlangeberg.github.io/LA-Notes/sitemap.xml
-- Structured data: Organization + WebSite + FAQPage op homepage
-
-## Contact
-
-- GitHub Issues: https://github.com/tjdlangeberg/LA-Notes/issues
-- E-mail: zie [humans.txt](/humans.txt)
+- RSS feed: https://thomasl-99.github.io/LA-Notes/feed.xml
+- Sitemap: https://thomasl-99.github.io/LA-Notes/sitemap.xml
+- Structured data: Organization + WebSite + FAQPage in homepage

@@ -2,28 +2,27 @@
 layout: default
 title: LA Notes
 description: >-
-  AI-vindbaarheid voor eenmanszaken — €70/maand. Wij helpen kleine
-  Nederlandse bedrijven vindbaar te worden in ChatGPT, Perplexity,
-  Claude en Google AI Overviews.
+  AI-vindbaarheid voor eenmanszaken die willen dat ChatGPT, Perplexity,
+  Claude en Google hen noemen — zonder dure website-aanpassingen.
 ---
 
-# LA Notes — AI-vindbaarheid voor eenmanszaken
+# LA Notes
 
-Wij bouwen de **machine-readable informatie** die AI-modellen nodig
-hebben om jouw bedrijf te citeren. Voor **€70/maand**.
+**Wij zorgen dat AI-modellen uw bedrijf noemen in hun antwoorden.**
 
-[→ Aanmelden als klant](https://github.com/tjdlangeberg/LA-Notes/issues/new?template=nieuwe-klant.md) · [→ Prijzen en pakket](/_pricing/prijzen.md) · [→ Gratis template](https://github.com/tjdlangeberg/ai-vindbaarheid-template)
+Niet door een grote website. Niet door advertenties. Niet door een SEO-traject.
 
-## Wat wij opleveren
+Resultaat: uw bedrijf verschijnt in AI-antwoorden binnen 2-6 weken, met
+citaten die verwijzen naar uw content.
 
-✓ Landingspagina met `schema.org Organization` + WebSite + FAQPage
-✓ `llms.txt` voor ChatGPT, Perplexity, Claude
-✓ `robots.txt` met 16 AI-crawlers toegelaten
-✓ Google Business Profile, LinkedIn, Wikidata-items
-✓ 3+ blog-posts per maand met Article-JSON-LD
-✓ Maandelijks rapport: wat AI-modellen over jou zeggen
+## Wat u krijgt
 
-## Recente artikelen
+✓ **Vindbaar in ChatGPT, Perplexity, Claude, Google AI Overviews**
+✓ **Citaten van uw eigen content** in hun antwoorden
+✓ **Eerste resultaten binnen 2-6 weken**, volledig binnen 3 maanden
+✓ **Geen reclame-budget nodig**, geen SEO-traject
+
+## Recente resultaten
 
 <ul>
 {% for post in site.posts limit:10 %}
@@ -36,38 +35,68 @@ hebben om jouw bedrijf te citeren. Voor **€70/maand**.
 {% endfor %}
 </ul>
 
-## Cases
+## Aanmelden
 
-- [Voorbeeld wijnimport-niche](/_examples/vinitho/_methodology.md) —
-  een eenmanszaak van 0 naar vindbaar in 4 weken
+Wij werken met een **kort intake-gesprek (30 min, gratis)** om te
+beoordelen of AI-vindbaarheid voor uw bedrijf zinvol is. Geen
+verplichtingen, geen verkoopgesprek.
 
-## Onderwerpen
+[→ Plan een intake](https://github.com/thomasl-99/LA-Notes/issues/new?template=nieuwe-klant.md)
 
-- [AI — llms.txt, JSON-LD, structured data](/_topics/ai.md)
-- [Horeca — positionering, terrassen, restaurants](/_topics/horeca.md)
-- [Wijnimport — marges, logistiek, kleine producenten](/_topics/wijnimport.md)
-- [Ondernemerschap — eenmanszaak-realiteit](/_topics/ondernemerschap.md)
+Of stuur een e-mail met uw bedrijfsnaam + branche naar
+[contact@la-notes.nl](mailto:contact@la-notes.nl).
+
+## Veelgestelde vragen
+
+### Werkt het echt?
+
+Ja — onze eerste klant in de wijnimport werd binnen 4 weken 23× per
+week genoemd in Google AI Overviews, met 6 Perplexity-citaten in
+niche-zoekopdrachten. Zie onze posts voor cijfers.
+
+### Voor wie is het?
+
+Eenmanszaken en kleine bedrijven in een niche, zonder eigen
+webdeveloper, met minimaal 1 uur per week voor content.
+
+### Wat kost het?
+
+Bespreken we tijdens de intake. Het tarief is afhankelijk van uw
+situatie, branche en gewenste snelheid.
+
+### Hoelang duurt het?
+
+2-6 weken voor eerste AI-citaten. Volledige vindbaarheid binnen
+±3 maanden.
+
+### Werkt het in mijn branche?
+
+Tijdens de intake beoordelen we gratis of uw branche geschikt is.
+Niet elke niche leent zich even goed — we zijn eerlijk over
+verwachtingen.
 
 ## Over LA Notes
 
 Handelsnaam van LA Solutions (KvK 97388505, btw NL005266959B81).
 Opgericht door Thomas Langeberg, tevens eigenaar van Simply Fish
-(visrestaurant, Amsterdam-Zuid) en ontwikkelaar van Coast RVS-systeem.
+(visrestaurant, Amsterdam-Zuid) en ontwikkelaar van Coast
+(RVS-systeem).
 
 ## Volg
 
 - [RSS feed](feed.xml)
-- [GitHub Issues](https://github.com/tjdlangeberg/LA-Notes/issues)
+- [GitHub](https://github.com/thomasl-99/LA-Notes)
 
 <!-- Structured data -->
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "LA Notes",
   "alternateName": "LA Solutions — LA Notes",
-  "description": "AI-vindbaarheid voor eenmanszaken. €70/maand.",
-  "url": "https://tjdlangeberg.github.io/LA-Notes/",
+  "description": "AI-vindbaarheid voor eenmanszaken. Resultaten: ChatGPT, Perplexity, Claude en Google noemen uw bedrijf.",
+  "url": "https://thomasl-99.github.io/LA-Notes/",
   "founder": {
     "@type": "Person",
     "name": "Thomas Langeberg"
@@ -88,19 +117,7 @@ Opgericht door Thomas Langeberg, tevens eigenaar van Simply Fish
       "name": "BTW",
       "value": "NL005266959B81"
     }
-  ],
-  "offers": {
-    "@type": "Offer",
-    "name": "AI-vindbaarheid-pakket",
-    "price": "70",
-    "priceCurrency": "EUR",
-    "priceSpecification": {
-      "@type": "UnitPriceSpecification",
-      "price": "70",
-      "priceCurrency": "EUR",
-      "unitCode": "MON"
-    }
-  }
+  ]
 }
 </script>
 
@@ -109,12 +126,8 @@ Opgericht door Thomas Langeberg, tevens eigenaar van Simply Fish
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "LA Notes",
-  "url": "https://tjdlangeberg.github.io/LA-Notes/",
-  "inLanguage": "nl",
-  "publisher": {
-    "@type": "Organization",
-    "name": "LA Notes"
-  }
+  "url": "https://thomasl-99.github.io/LA-Notes/",
+  "inLanguage": "nl"
 }
 </script>
 
@@ -125,26 +138,10 @@ Opgericht door Thomas Langeberg, tevens eigenaar van Simply Fish
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Wat is LA Notes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LA Notes is een handelsnaam van LA Solutions die Nederlandse eenmanszaken helpt vindbaar te worden in AI-modellen als ChatGPT, Perplexity, Claude en Google AI Overviews. Voor €70 per maand."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wat kost het?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "€70 per maand, maandelijks opzegbaar. Geen setup-kosten."
-      }
-    },
-    {
-      "@type": "Question",
       "name": "Werkt het echt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja, bij onze eerste klant in de wijnimport leverde het binnen 4 weken 23 zoekopdrachten per week in Google AI Overviews en 6 Perplexity-citaten op."
+        "text": "Ja — bij onze eerste klant in de wijnimport: 23 zoekopdrachten per week in Google AI Overviews, 6 Perplexity-citaten binnen 4 weken."
       }
     },
     {
@@ -152,7 +149,15 @@ Opgericht door Thomas Langeberg, tevens eigenaar van Simply Fish
       "name": "Voor wie is het?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Voor Nederlandse eenmanszaken en kleine bedrijven (1-5 medewerkers) in een niche, zonder eigen webdeveloper."
+        "text": "Eenmanszaken en kleine bedrijven in een niche, zonder eigen webdeveloper."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoelang duurt het voor resultaat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2-6 weken voor eerste AI-citaten. Volledige vindbaarheid binnen 3 maanden."
       }
     }
   ]

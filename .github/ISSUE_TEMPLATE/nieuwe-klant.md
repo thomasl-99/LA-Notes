@@ -1,37 +1,33 @@
 ---
-name: Nieuwe klant
-about: Meld je aan voor AI-vindbaarheid-pakket (€70/maand)
-title: "[KLANT] "
-labels: ["klant", "nieuw"]
-assignees: tjdlangeberg
+name: Intake-aanvraag
+about: Vraag een gratis intake-gesprek aan (30 min)
+title: "[INTAKE] "
+labels: ["intake", "nieuw"]
+assignees: thomasl-99
 ---
 
-## Bedrijfsgegevens
+## Bedrijf
 
 - **Bedrijfsnaam**: ___
-- **KvK**: ___
-- **Btw**: ___
-- **Branche** (2-4 woorden): ___
+- **Branche** (1-2 woorden): ___
 - **Vestigingsplaats**: ___
-- **Eigenaar**: ___
-- **Website** (als die er is): ___
 
 ## Contact
 
+- **Naam**: ___
 - **E-mail**: ___
 - **Telefoon** (optioneel): ___
 
-## Huidige situatie
+## Uw situatie
 
-Heb je nu al een website? [ ] Ja [ ] Nee [ ] Alleen social media
+In 2-3 zinnen: wat doet uw bedrijf en voor wie?
 
-Zo ja, op welk platform: ___
+## Uw doel
 
-## Wat hoop je te bereiken
+Wat zou een succes zijn als AI-modellen uw bedrijf noemen?
 
-In 1-2 zinnen: wat zou voor jou een succes zijn als AI-modellen je
-noemen?
+## Voorkeur intake-moment
 
-## Aanvullende info
-
-[Alles wat je kwijt wilt — voorkeuren, budget, tijdlijn, etc.]
+- [ ] Ochtend (9-12)
+- [ ] Middag (12-17)
+- [ ] Avond (17-19)
