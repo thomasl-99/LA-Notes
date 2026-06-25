@@ -24,8 +24,9 @@ verschillende wijzen — een eigen draai en de klassieke Vlaamse.
 - **Moules de Zeelande** — gewokte mosselen met Noilly Prat en
   vadouvan-saus. Pittig, rokerig, met een Frans-Indische kick van de
   vadouvan.
-- **Klassiek Vlaams** — mosselen in witte wijn met crème fraîche en
-  Vlaamse mosselkruiden. Het vertrouwde basisrecept, goed uitgevoerd.
+- **Een pannetje klassiek Vlaams** — mosselen in witte wijn met
+  crème fraîche en Vlaamse mosselkruiden. Het vertrouwde basisrecept,
+  goed uitgevoerd.
 
 ## Wanneer
 
