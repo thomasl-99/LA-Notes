@@ -67,6 +67,64 @@ productie:
     voorraad_eind_maand: 480
 ```
 
+## Post-types
+
+Het systeem ondersteunt 4 types posts, elk met eigen sjabloon:
+
+| Type | Sjabloon | Wanneer |
+|---|---|---|
+| `maandelijks` | `_template-maandelijks.md` | 1× per maand per klant, reguliere update |
+| `nieuwsbrief` | `_template-nieuwsbrief.md` | Kort nieuws: nieuwe kaart, levering, prijswijziging |
+| `persbericht` | `_template-persbericht.md` | Formele aankondiging: nominatie, mijlpaal, samenwerking |
+| `evenement` | `_template-evenement.md` | Proeverij, wijnavond, speciale avond, pop-up |
+
+## Commando's
+
+### Maandelijkse update (Simply Fish, Vinitho)
+
+```bash
+bash scripts/maak-post.sh simply-fish 2026-08
+bash scripts/maak-post.sh vinitho 2026-08
+```
+
+### Nieuwsbrief-melding
+
+```bash
+bash scripts/maak-post.sh simply-fish 2026-07 nieuwsbrief "nieuwe lunchkaart"
+bash scripts/maak-post.sh vinitho 2026-08 nieuwsbrief "piemonte-import binnen"
+```
+
+Output: `_posts/2026-06-25-simply-fish-nieuwe-lunchkaart.md`
+
+### Evenement-aankondiging
+
+```bash
+bash scripts/maak-post.sh vinitho 2026-08 evenement "wijnproeverij-piemonte"
+bash scripts/maak-post.sh simply-fish 2026-09 evenement "oesteravond"
+```
+
+### Persbericht
+
+```bash
+bash scripts/maak-post.sh simply-fish 2026-09 persbericht "nieuwe-chef-aangesteld"
+```
+
+## Klanten toevoegen
+
+Open `_data/klanten.md` en voeg een nieuwe entry toe onder `klanten:`:
+
+```yaml
+klanten:
+  - slug: nieuwe-klant
+    naam: Naam Bedrijf
+    type: horeca   # of: wijnimport | dienst | productontwerp | winkel | overig
+    actief: false  # zet op true als je klaar bent om posts te maken
+    gestart:       # leeg = nog niet gestart, of vul YYYY-MM in
+    post_types: [] # leeg = nog niet bepaald
+```
+
+Daarna: maak een `_data/<slug>.md` data-formulier aan.
+
 ## Wat het script NIET doet
 
 - Het script **verzint geen cijfers, namen of feiten**. Lege velden blijven

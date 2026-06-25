@@ -1,131 +1,147 @@
 #!/usr/bin/env bash
-# Maak een nieuwe maandelijkse post op basis van data uit _data/<klant>.md
-# Gebruik: ./scripts/maak-post.sh <klant> <YYYY-MM>
+# Maak een nieuwe post op basis van data uit _data/<klant>.md
+# Ondersteunt types: maandelijks, nieuwsbrief, persbericht, evenement
 #
-# Voorbeeld:
+# Gebruik:
+#   ./scripts/maak-post.sh <klant> <YYYY-MM> [type] [onderwerp]
+#
+# Voorbeelden:
 #   ./scripts/maak-post.sh simply-fish 2026-07
-#   ./scripts/maak-post.sh vinitho 2026-08
-#   ./scripts/maak-post.sh coast 2026-07
+#   ./scripts/maak-post.sh simply-fish 2026-07 nieuwsbrief "nieuwe lunchkaart"
+#   ./scripts/maak-post.sh vinitho 2026-08 import_update "piemonte-reis"
+#   ./scripts/maak-post.sh simply-fish 2026-07 evenement "wijnavond 18-08"
 
 set -euo pipefail
 
 KLANT="${1:-}"
 MAAND="${2:-}"
+POST_TYPE="${3:-maandelijks}"
+ONDERWERP="${4:-update}"
 
 if [ -z "$KLANT" ] || [ -z "$MAAND" ]; then
-  echo "Gebruik: $0 <klant> <YYYY-MM>"
-  echo "Klanten: simply-fish | vinitho | coast"
+  echo "Gebruik: $0 <klant> <YYYY-MM> [type] [onderwerp]"
+  echo ""
+  echo "Klanten:    simply-fish | vinitho | coast"
+  echo "Types:      maandelijks | nieuwsbrief | persbericht | evenement"
+  echo "            import_update | proeverij (vinitho-specifiek)"
+  echo ""
+  echo "Voorbeelden:"
+  echo "  $0 simply-fish 2026-07"
+  echo "  $0 simply-fish 2026-07 nieuwsbrief nieuwe-lunchkaart"
+  echo "  $0 vinitho 2026-08 evenement wijnproeverij-piemonte"
   exit 1
 fi
 
-if [ ! -f "_data/${KLANT}.md" ]; then
-  echo "FOUT: _data/${KLANT}.md bestaat niet."
-  echo "Maak eerst het klant-formulier aan."
+# Bestaat de klant in het klantenregister?
+if [ ! -f "_data/klanten.md" ]; then
+  echo "FOUT: _data/klanten.md bestaat niet."
   exit 1
 fi
 
-# Maandnaam in het Nederlands (werkt met LC_ALL=C)
+if ! grep -q "slug: ${KLANT}$" "_data/klanten.md"; then
+  echo "FOUT: klant '${KLANT}' niet in _data/klanten.md."
+  echo "Bekende klanten:"
+  grep "slug:" "_data/klanten.md" | sed 's/.*slug: //; s/ *$//'
+  exit 1
+fi
+
+# Is de klant actief?
+SECTIE=$(awk -v klant="${KLANT}" '
+  $0 ~ "slug: " klant { in_klant=1 }
+  in_klant && /^  - slug:/ && $0 !~ "slug: " klant { in_klant=0 }
+  in_klant && /actief:/ { gsub(/.*actief: */, ""); gsub(/ *$/, ""); print; exit }
+' "_data/klanten.md")
+
+if [ "$SECTIE" != "true" ]; then
+  echo "FOUT: klant '${KLANT}' is niet actief (actief: ${SECTIE:-onbekend})."
+  echo "Activeer in _data/klanten.md of gebruik een actieve klant."
+  exit 1
+fi
+
+# Trek basisgegevens uit klantenregister
+NAAM=$(awk -v klant="${KLANT}" '
+  $0 ~ "slug: " klant { in_klant=1 }
+  in_klant && /^  - slug:/ && $0 !~ "slug: " klant { in_klant=0 }
+  in_klant && /naam:/ { gsub(/.*naam: */, ""); gsub(/[" ]*$/, ""); print; exit }
+' "_data/klanten.md")
+
+[ -z "$NAAM" ] && NAAM="$KLANT"
+
+# Data-bestand (kan maandelijks zijn OF klant-specifiek data-bestand)
+DATA_FILE="_data/${KLANT}.md"
+[ ! -f "$DATA_FILE" ] && DATA_FILE="_data/klanten.md"
+
+# Datum + bestandsnaam
 JAAR="${MAAND%%-*}"
 MAAND_NUMMER="${MAAND##*-}"
 MAAND_NL=$(LC_ALL=C date -d "${MAAND}-01" +"%B" 2>/dev/null || echo "${MAAND}")
+MAAND_LOWER=$(echo "$MAAND_NL" | tr '[:upper:]' '[:lower:]')
 
-# Trek basisgegevens uit het data-bestand
-NAAM=$(grep -A3 "^basis:" "_data/${KLANT}.md" | grep "naam:" | head -1 | sed 's/.*naam: *//; s/"//g; s/ *$//')
-[ -z "$NAAM" ] && NAAM="$KLANT"
-
-# Vind de regel met de maand-header en pak alle "tekst:" regels tot de volgende maand-header
-DATA_FILE="_data/${KLANT}.md"
-START_LINE=$(grep -n "^  ${MAAND}:" "$DATA_FILE" | head -1 | cut -d: -f1)
-
-if [ -z "$START_LINE" ]; then
-  FEITEN=""
+# Datum voor de post: 1e van de maand voor maandelijks, vandaag voor andere
+if [ "$POST_TYPE" = "maandelijks" ]; then
+  POST_DATUM="${MAAND}-01"
+  BESTAND="_posts/${MAAND}-01-${KLANT}-${MAAND_LOWER}.md"
 else
-  # Vanaf start_line, pak regels met 'tekst:' tot de volgende maand-header (  YYYY-MM:)
-  END_LINE=$(awk -v start="$START_LINE" 'NR > start && /^  [0-9]{4}-[0-9]{2}:/ { print NR; exit }' "$DATA_FILE")
-  if [ -z "$END_LINE" ]; then
-    END_LINE="$(( $(wc -l < "$DATA_FILE") + 1 ))"
-  fi
-  FEITEN=$(sed -n "${START_LINE},${END_LINE}p" "$DATA_FILE" | \
-    grep 'tekst:' | \
-    sed 's/.*tekst: *//; s/"//g; s/ *$//' | \
-    grep -v '^$' | \
-    sed 's/^/- /')
+  POST_DATUM="$(date +%Y-%m-%d)"
+  ONDERWERP_SLUG=$(echo "$ONDERWERP" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd 'a-z0-9-')
+  BESTAND="_posts/${POST_DATUM}-${KLANT}-${ONDERWERP_SLUG}.md"
 fi
 
-# Sluitingen ophalen (zoek datum + reden paren)
-SLUITINGEN=$(awk '
-  /^sluitingen:/ { in_blok=1; next }
-  in_blok && /^[a-z_]+:/ { in_blok=0 }
-  in_blok {
-    if (match($0, /datum: *"([^"]+)"/, m)) datum = m[1]
-    if (match($0, /reden: *"([^"]+)"/, m)) reden = m[1]
-    if (datum != "" && reden != "") {
-      print "- " datum " — " reden
-      datum = ""
-      reden = ""
-    }
-  }
-' "$DATA_FILE")
+# Kies het juiste sjabloon
+SJABLOON="_posts/_template-${POST_TYPE}.md"
+if [ ! -f "$SJABLOON" ]; then
+  echo "FOUT: sjabloon ${SJABLOON} bestaat niet."
+  echo "Beschikbare types: $(ls _posts/_template-*.md | sed 's/.*_template-//; s/.md//' | tr '\n' ' ')"
+  exit 1
+fi
 
-# Eerste feit voor AI-summary (of placeholder)
-EERSTE_FEIT=$(echo "$FEITEN" | head -1 | sed 's/^- //')
-[ -z "$EERSTE_FEIT" ] && EERSTE_FEIT="geen nieuwe feiten ingevuld"
+# Genereer de post uit sjabloon
+cp "$SJABLOON" "$BESTAND"
 
-# Output-bestandsnaam
-MAAND_LOWER=$(echo "$MAAND_NL" | tr '[:upper:]' '[:lower:]')
-BESTAND="_posts/${MAAND}-01-${KLANT}-${MAAND_LOWER}.md"
+# Vervang placeholders in de gekopieerde post
+sed -i "s/\[KLANT\]/${NAAM}/g; s/YYYY-MM-DD/${POST_DATUM}/g" "$BESTAND"
 
-# Frontmatter
-cat > "$BESTAND" <<FRONTMATTER
----
-title: "${NAAM} — ${MAAND_NL^} ${JAAR}: maandelijkse update"
-datum: ${MAAND}-01
-type: maandelijks
-klant: ${KLANT}
-auteur: Thomas Langeberg
-sector: $(grep -A3 "^basis:" "$DATA_FILE" | grep -oE "horeca|wijnimport|productontwerp" | head -1 || echo "ondernemerschap")
-trefwoorden: [${KLANT}, ${MAAND_LOWER}, update, maandelijks]
-ai_summary: "${NAAM} ${MAAND_LOWER} ${JAAR}: ${EERSTE_FEIT}."
-taal: nl
-lesstof: ["maandelijkse-update", "${KLANT}"]
----
-
-# ${NAAM} — ${MAAND_NL^} ${JAAR}
-
-Maandelijkse update voor ${NAAM}. Geschreven door de eigenaar op basis van
-eigen administratie en waarneming.
-
-## Wat is er deze maand gebeurd
-
-${FEITEN:-_Nog geen feiten ingevuld in _data/${KLANT}.md voor ${MAAND}._}
-
-## Sluitingsdagen / vakanties
-
-${SLUITINGEN:-_Geen geplande sluitingen voor ${MAAND}._}
-
-## Bijzonderheden
-
-_Geen bijzonderheden gemeld._
-
-## Volgende maand (preview)
-
-_Nog niet bekend — wordt volgende maand ingevuld._
-
----
-
-## Bron
-
-Eigen administratie ${MAAND_NL^} ${JAAR}. Gegevens uit
-_data/${KLANT}.md (door eigenaar bijgehouden).
-FRONTMATTER
+# Specifieke vervangingen per type
+case "$POST_TYPE" in
+  maandelijks)
+    sed -i "s/\[MAAND JAAR\]/${MAAND_NL^} ${JAAR}/g" "$BESTAND"
+    # Voeg feiten in op basis van _data
+    if [ -f "$DATA_FILE" ]; then
+      START_LINE=$(grep -n "^  ${MAAND}:" "$DATA_FILE" 2>/dev/null | head -1 | cut -d: -f1)
+      if [ -n "$START_LINE" ]; then
+        END_LINE=$(awk -v start="$START_LINE" 'NR > start && /^  [0-9]{4}-[0-9]{2}:/ { print NR; exit }' "$DATA_FILE")
+        [ -z "$END_LINE" ] && END_LINE="999"
+        FEITEN=$(sed -n "${START_LINE},${END_LINE}p" "$DATA_FILE" | \
+          grep 'tekst:' | \
+          sed 's/.*tekst: *//; s/"//g; s/ *$//' | \
+          grep -v '^$' | \
+          sed 's/^/- /' || true)
+        if [ -n "$FEITEN" ]; then
+          # Vervang placeholder door feiten
+          sed -i "/_Nog geen feiten ingevuld/,/^_/c\\${FEITEN}" "$BESTAND"
+        fi
+      fi
+    fi
+    ;;
+  evenement)
+    sed -i "s/\[EVENEMENT-NAAM\]/${ONDERWERP}/g" "$BESTAND"
+    ;;
+  *)
+    # nieuwsbrief / persbericht — basis vervanging
+    sed -i "s/\[KORTE TITEL: max 8 woorden\]/${ONDERWERP^}/g" "$BESTAND"
+    sed -i "s/\[PERSBERICHT-TITEL: actief, max 12 woorden\]/${ONDERWERP^}/g" "$BESTAND"
+    ;;
+esac
 
 echo ""
 echo "✓ Post aangemaakt: ${BESTAND}"
+echo "  Type: ${POST_TYPE}"
+echo "  Klant: ${NAAM}"
+echo "  Datum: ${POST_DATUM}"
 echo ""
 echo "Volgende stappen:"
 echo "  1. Open ${BESTAND}"
-echo "  2. Controleer de AI-summary (1 zin)"
-echo "  3. Vul ontbrekende velden in ('_Nog geen..._' zijn placeholders)"
-echo "  4. Commit + push"
-echo ""
-echo "Vergeet niet _data/${KLANT}.md bij te werken voor volgende maand."
+echo "  2. Vul [HOOFDJES] in met eigen content"
+echo "  3. Verwijder overbodige # commentaar-regels"
+echo "  4. Controleer AI-summary (1 zin)"
+echo "  5. Commit + push"
