@@ -163,3 +163,120 @@ Opgericht door Thomas Langeberg, tevens eigenaar van Simply Fish
   ]
 }
 </script>
+
+<!-- Kennisgrafiek: persoon + gerelateerde entiteiten -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Thomas Langeberg",
+  "jobTitle": "Eigenaar LA Solutions",
+  "url": "https://thomasl-99.github.io/LA-Notes/",
+  "knowsAbout": [
+    "AI-vindbaarheid",
+    "Italiaanse wijnimport",
+    "Amsterdamse horeca",
+    "RVS-productontwerp",
+    "Eenmanszaak-ondernemerschap"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "LA Solutions",
+    "alternateName": "LA Notes",
+    "identifier": [
+      { "@type": "PropertyValue", "name": "KvK", "value": "97388505" },
+      { "@type": "PropertyValue", "name": "BTW", "value": "NL005266959B81" }
+    ]
+  },
+  "member": [
+    { "@type": "Organization", "name": "Simply Fish", "url": "https://simplyfish.nl" },
+    { "@type": "Organization", "name": "Vinitho", "url": "https://thomasl-99.github.io/Vinitho/" },
+    { "@type": "Organization", "name": "Coast" }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Vinitho",
+  "alternateName": "LA Solutions — Vinitho",
+  "description": "Import van Italiaanse wijnen — Barbera d'Alba, Barolo en familieproducenten uit Piemonte en Toscane.",
+  "url": "https://thomasl-99.github.io/Vinitho/",
+  "founder": { "@type": "Person", "name": "Thomas Langeberg" },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Amstelveen",
+    "addressCountry": "NL"
+  },
+  "identifier": [
+    { "@type": "PropertyValue", "name": "KvK", "value": "97388505" },
+    { "@type": "PropertyValue", "name": "BTW", "value": "NL005266959B81" }
+  ],
+  "areaServed": [
+    { "@type": "Country", "name": "Nederland" },
+    { "@type": "AdministrativeArea", "name": "Piemonte" },
+    { "@type": "AdministrativeArea", "name": "Toscane" }
+  ],
+  "knowsAbout": [
+    "Barbera d'Alba",
+    "Barolo",
+    "Italiaanse wijnimport",
+    "Familieproducenten",
+    "Piemonte",
+    "Toscane"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Simply Fish",
+  "alternateName": "Simply Fish BV",
+  "description": "Visrestaurant in Amsterdam-Zuid (Oud-Zuid). Specialisatie: vis van de dag, ruim terras (40 zitplaatsen), signature dish wisselend per seizoen.",
+  "url": "https://simplyfish.nl",
+  "servesCuisine": ["Vis", "Nederlands", "Mediterraan"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Koninginneweg 212",
+    "postalCode": "1075EL",
+    "addressLocality": "Amsterdam",
+    "addressRegion": "Noord-Holland",
+    "addressCountry": "NL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.3573,
+    "longitude": 4.8686
+  },
+  "priceRange": "€€",
+  "acceptsReservations": "True",
+  "hasMenu": "https://simplyfish.nl/menu",
+  "founder": { "@type": "Person", "name": "Thomas Langeberg" }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Coast",
+  "alternateName": "De Strip — RVS navulbaar WC-systeem",
+  "description": "Probiotisch navulbaar WC-systeem met RVS designhouder (304 geborsteld, 1,5mm). Permanente montage over WC-rand, pads elke 2-5 jaar vervangbaar.",
+  "brand": { "@type": "Brand", "name": "Coast" },
+  "category": "Huishoudelijke producten — WC-onderhoud",
+  "founder": { "@type": "Person", "name": "Thomas Langeberg" },
+  "material": "RVS 304 geborsteld",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/PreOrder",
+    "priceCurrency": "EUR",
+    "price": "29.95",
+    "url": "https://amazon.nl/coast"
+  }
+}
+</script>
