@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<article>
+  <header>
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+      {% if page.sector %} · {{ page.sector }}{% endif %}
+    </div>
+    {% if page.ai_summary %}
+    <div class="ai-summary">
+      <strong>Samenvatting:</strong> {{ page.ai_summary }}
+    </div>
+    {% endif %}
+  </header>
+
+  {{ content }}
+
+  {% if page.trefwoorden %}
+  <footer style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border);">
+    <p><strong>Tags:</strong>
+    {% for tag in page.trefwoorden %}
+      <code>{{ tag }}</code>
+    {% endfor %}
+    </p>
+  </footer>
+  {% endif %}
+</article>

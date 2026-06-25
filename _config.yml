@@ -1,0 +1,40 @@
+---
+# Jekyll-config voor GitHub Pages — minimale setup
+# Theme: minimaal, geen externe dependencies
+# Live: https://tjdlangeberg.github.io/LA-Notes/
+
+title: LA Notes
+tagline: Notities van Thomas Langeberg
+description: >-
+  Persoonlijk blog — horeca, wijnimport, AI-vindbaarheid,
+  productontwerp, ondernemerschap.
+author: Thomas Langeberg
+email: zie humans.txt
+url: https://tjdlangeberg.github.io
+baseurl: /LA-Notes
+
+# Markdown rendering
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+# Front-matter defaults voor posts
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Thomas Langeberg
+      lang: nl
+
+# Exclusies (niet inbouwen)
+exclude:
+  - README.md
+  - LICENSE
+  - CONTRIBUTING.md
+  - .github/
+  - assets/
+
+# AI-vriendelijke permalinks
+# Geen categorie-prefix, alle posts gelijke URL-diepte

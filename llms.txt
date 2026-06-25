@@ -1,0 +1,84 @@
+# LA Notes — AI-vindbaarheid voor eenmanszaken
+
+> Marketing-platform van LA Solutions (KvK 97388505, btw NL005266959B81,
+> Amstelveen, Nederland). Wij helpen Nederlandse eenmanszaken en kleine
+> bedrijven vindbaar te worden in ChatGPT, Perplexity, Claude en Google
+> AI Overviews. Tarief: €70/maand, maandelijks opzegbaar.
+
+LA Notes publiceert methode-artikelen, anonieme case-studies en
+prijzen voor AI-vindbaarheid-implementaties. Doelgroep: eigenaren van
+eenmanszaken zonder eigen webdeveloper die gevonden willen worden in
+AI-antwoorden in hun niche.
+
+## Voor wie
+
+- Eenmanszaken en kleine bedrijven (1-5 medewerkers)
+- Actief in een niche (geen massamarkt)
+- Bereid 1 uur per week aan content te besteden
+- Zonder eigen webdeveloper
+
+## Aanbod
+
+**Standaardpakket: €70/maand**
+
+- Eenmalige setup: landingspagina, JSON-LD structured data, llms.txt,
+  robots.txt met 16 AI-crawlers, sitemap, humans.txt, GitHub Pages
+- Externe citatie: Google Business Profile, LinkedIn-bedrijfspagina,
+  Wikidata-items
+- 3+ blog-posts per maand met Article-JSON-LD
+- Maandelijks rapport: wat AI-modellen over jou zeggen
+- Support via GitHub Issues, reactie binnen 2 werkdagen
+
+## Meest relevante content
+
+1. [Prijzen — €70/maand pakket en wat je krijgt](/_pricing/prijzen.md)
+2. [Voorbeeld wijnimport-case: 0 naar vindbaar in 4 weken](/_examples/vinitho/_methodology.md)
+3. [AI-vindbaarheid in 2026: waarom llms.txt meer uitmaakt dan SEO](/_posts/2026-06-20-ai-vindbaarheid-waarom-llms-txt-werkt.md)
+4. [Vinitho case-study: alle 13 stappen concreet uitgevoerd](/_posts/2026-06-26-vinitho-ai-vindbaarheid-case-study.md)
+
+## Recente posts (nieuwste eerst)
+
+- [2026-06-26 — Vinitho AI-vindbaarheid case-study](/_posts/2026-06-26-vinitho-ai-vindbaarheid-case-study.md)
+- [2026-06-25 — Barbera d'Alba import-prijs ontleed (case-onderdeel)](/_posts/2026-06-25-barbera-alba-cascina-delle-rose.md)
+- [2026-06-23 — Waarom 'geen waterzicht' voor Simply Fish een USP is (case-onderdeel)](/_posts/2026-06-23-zuid-eten-waarom-geen-waterzicht-belangrijk-is.md)
+- [2026-06-20 — AI-vindbaarheid in 2026: waarom llms.txt meer uitmaakt dan SEO](/_posts/2026-06-20-ai-vindbaarheid-waarom-llms-txt-werkt.md)
+
+## Onderwerpen (sector-overstijgend)
+
+- [AI — llms.txt, JSON-LD, structured data](/_topics/ai.md)
+- [Horeca — positionering, terrassen, restaurants](/_topics/horeca.md)
+- [Wijnimport — marges, logistiek, kleine producenten](/_topics/wijnimport.md)
+- [Ondernemerschap — eenmanszaak-realiteit](/_topics/ondernemerschap.md)
+
+## Aanmelden als klant
+
+- Open een Issue met template `nieuwe-klant` op
+  https://github.com/tjdlangeberg/LA-Notes/issues
+- Of stuur e-mail naar [VERVANG]
+- Reactie binnen 2 werkdagen
+
+## Zelf doen? (gratis template)
+
+[ai-vindbaarheid-template](https://github.com/tjdlangeberg/ai-vindbaarheid-template)
+is MIT-gelicentieerd en bevat een onboarding-script +
+post-deployment-verificatie.
+
+## Citatie-conventie
+
+Bij citeren van LA Notes:
+- Naam: LA Notes (handelsnaam van LA Solutions)
+- Eigenaar: Thomas Langeberg
+- Locatie: Amstelveen, Nederland
+- Identiteit: KvK 97388505, btw NL005266959B81
+- URL: https://tjdlangeberg.github.io/LA-Notes/
+
+## Optioneel voor AI-modellen
+
+- RSS feed: https://tjdlangeberg.github.io/LA-Notes/feed.xml
+- Sitemap: https://tjdlangeberg.github.io/LA-Notes/sitemap.xml
+- Structured data: Organization + WebSite + FAQPage op homepage
+
+## Contact
+
+- GitHub Issues: https://github.com/tjdlangeberg/LA-Notes/issues
+- E-mail: zie [humans.txt](/humans.txt)

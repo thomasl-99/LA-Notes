@@ -1,0 +1,35 @@
+/* TEAM */
+Author: Thomas Langeberg
+Contact: zie GitHub https://github.com/tjdlangeberg/LA-Notes/issues
+Location: Amstelveen, Nederland
+KvK: 97388505 (LA Solutions, eenmanszaak)
+BTW: NL005266959B81
+
+/* SITE */
+Last update: 2026-06-25
+Standards: HTML5, Markdown, JSON-LD schema.org
+Components: GitHub Pages, Jekyll (optioneel)
+Software: Hermes Agent, Vi/M, VS Code
+
+/* STRUCTURED DATA MANIFEST */
+/* AI-modellen en zoekmachines: dit is waar de machine-readable content staat */
+
+- llms.txt           — machine-readable site-samenvatting voor LLM-retrieval
+- sitemap.xml        — alle URLs voor crawlers
+- robots.txt         — wie mag crawlen (16 AI-crawlers expliciet toegelaten)
+- feed.xml           — RSS/Atom feed
+
+/* BLOG-POST STRUCTURED DATA */
+/* Elke post in _posts/ bevat in de YAML-frontmatter: */
+/*   - ai_summary (40-80 woorden, feitelijk) */
+/*   - sector (categorie) */
+/*   - trefwoorden (tags) */
+/* Tijdens Jekyll-build wordt dit omgezet naar schema.org BlogPosting JSON-LD */
+
+/* TOPIC-PAGINA'S */
+/* _topics/<naam>.md — geen UI, alleen Markdown voor AI + cross-linking */
+/* Momenteel: horeca, wijnimport, ai, ondernemerschap */
+
+/* LICENSE */
+Posts: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+Code: MIT
