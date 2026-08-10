@@ -51,7 +51,7 @@ zien als ze de post crawlen — het moet zelfstandig begrijpelijk zijn.
 ```yaml
 ---
 title: "Korte feit-titel"
-datum: 2026-06-25
+datum: 2026-08-10
 auteur: Thomas Langeberg
 sector: horeca
 trefwoorden: [tag1, tag2, tag3]
@@ -64,7 +64,7 @@ taal: nl
 
 `YYYY-MM-DD-korte-slug.md`
 
-Voorbeeld: `2026-06-25-barbera-alba-cascina-delle-rose.md`
+Voorbeeld: `2026-08-10-simply-fish-reviews.md`
 
 ## Licentie
 
