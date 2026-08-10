@@ -38,6 +38,7 @@ exclude:
   - CONTRIBUTING.md
   - .github/
   - assets/
+  - _examples/
 
 # AI-vriendelijke permalinks
 # Geen categorie-prefix, alle posts gelijke URL-diepte
