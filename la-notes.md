@@ -17,15 +17,36 @@ met citaten die verwijzen naar uw eigen content.
 
 ## Wat we doen
 
-- **Content in AI-leesbaar formaat** — Markdown, gestructureerde
-  data (schema.org JSON-LD), `llms.txt` zodat AI-modellen uw zaak
-  kunnen citeren
+- **Een consistente entity footprint opbouwen** — bedrijfsgegevens,
+  website, reviews, menu, locatie en actuele informatie zijn
+  openbaar, gestructureerd en met elkaar in lijn. Dat is de basis
+  waarop AI-modellen uw zaak kunnen vinden, begrijpen en noemen.
+- **Gestructureerde data (schema.org JSON-LD)** zodat AI-modellen
+  weten wát uw zaak is, waar die zit, en wat er wordt aangeboden.
 - **Publieke data aggregeren** — reviews, menu, openingstijden,
-  actuele acties uit openbare bronnen
+  actuele acties uit openbare bronnen, in Markdown.
 - **Eerlijke observaties publiceren** — wat de data zegt over uw
-  zaak, zonder verkooppraat
+  zaak, zonder verkooppraat.
 - **Meetbaar maken** — periodieke meting of AI-modellen uw zaak
-  noemen (baseline + herhaalbaar)
+  noemen (baseline + herhaalbaar).
+
+Technieken als `llms.txt` zijn een hulpmiddel, niet de kern. De
+kern is dat uw zaak als entiteit herkenbaar is in de bronnen die
+AI-modellen raadplegen.
+
+## Wat AI-modellen wel en niet kunnen
+
+AI-vindbaarheid bestaat uit drie verschillende problemen die wij
+niet allemaal in gelijke mate oplossen:
+
+- **Discovery** — kan een AI-systeem uw bedrijf vinden?
+- **Understanding** — begrijpt het systeem wat uw bedrijf doet?
+- **Citation** — besluit het systeem uw bedrijf in een antwoord te
+  noemen en er een bron bij te zetten?
+
+Gestructureerde data helpt vooral bij *understanding*. Citation
+blijft afhankelijk van het AI-model, de context, en wat er online
+over uw zaak staat. Daar zijn wij eerlijk over.
 
 ## Voor wie
 
@@ -35,7 +56,12 @@ restaurants, speciaalzaken, lokale diensten, importeurs.
 ## Cases
 
 - [Simply Fish (pilot)](/simply-fish/) — visrestaurant in
-  Amsterdam-Zuid, eerste LA Notes-traject.
+  Amsterdam-Zuid, eerste LA Notes-traject. **Pilot-disclaimer:**
+  Simply Fish is onze eerste pilot en wordt transparant als zodanig
+  gepubliceerd. De restaurantmanager is Thomas Langeberg, tevens
+  oprichter van LA Notes. De eigenaren (Jan en Francis Rijk) hebben
+  schriftelijk toestemming verleend. Resultaten zijn niet
+  gegarandeerd representatief voor andere klanten.
 
 ## Aanmelden
 
