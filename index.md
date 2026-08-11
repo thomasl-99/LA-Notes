@@ -45,8 +45,8 @@ verplichtingen, geen verkoopgesprek.
 
 [→ Plan een intake](https://github.com/thomasl-99/LA-Notes/issues/new?template=nieuwe-klant.md)
 
-Of stuur een e-mail met uw bedrijfsnaam + branche naar
-[contact@la-notes.nl](mailto:contact@la-notes.nl).
+Of bel **0640110842** (bellen of WhatsApp) met uw
+bedrijfsnaam + branche.
 
 ## Veelgestelde vragen
 

@@ -1,21 +1,21 @@
 # LA Notes
 
-**Wij zorgen dat AI-modellen uw bedrijf noemen in hun antwoorden.**
+**Wij vergroten de kans dat AI-modellen uw bedrijf vinden, begrijpen
+en noemen — met citaten die verwijzen naar uw eigen content.**
 
 Niet door een grote website. Niet door advertenties. Niet door een
 SEO-traject.
-
-Resultaat: uw bedrijf verschijnt in AI-antwoorden binnen 2-6 weken,
-met citaten die verwijzen naar uw eigen content.
 
 ---
 
 ## Wat u krijgt
 
-✓ Vindbaar in **ChatGPT, Perplexity, Claude, Google AI Overviews**
-✓ **Citaten van uw eigen content** in hun antwoorden
-✓ Eerste resultaten **binnen 2-6 weken**
-✓ Geen reclame-budget, geen SEO-traject
+- Vindbaar in **ChatGPT, Perplexity, Claude, Google AI Overviews**
+- **Citaten van uw eigen content** in hun antwoorden
+- Geen reclame-budget, geen SEO-traject
+
+Eerste meetbare signalen verschijnen vaak binnen enkele weken;
+resultaten verschillen per branche en uitgangssituatie.
 
 ## Aanmelden
 
@@ -24,8 +24,8 @@ beoordelen of AI-vindbaarheid voor uw bedrijf zinvol is.
 
 [Plan een intake](https://github.com/thomasl-99/LA-Notes/issues/new?template=nieuwe-klant.md)
 
-Of stuur een e-mail met uw bedrijfsnaam + branche naar
-[contact@la-notes.nl](mailto:contact@la-notes.nl).
+Of bel **0640110842** (bellen of WhatsApp) met uw bedrijfsnaam
++ branche.
 
 ## Over LA Notes
 

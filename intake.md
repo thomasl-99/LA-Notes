@@ -32,7 +32,7 @@ Kies wat voor u het makkelijkst is:
 
 - [Open een Issue op GitHub](https://github.com/thomasl-99/LA-Notes/issues/new?template=nieuwe-klant.md)
   — vult u in wanneer het u uitkomt
-- Stuur een e-mail naar [contact@la-notes.nl](mailto:contact@la-notes.nl)
+- Bel of WhatsApp naar **[0640110842](tel:0640110842)**
   met bedrijfsnaam en branche
 
 We reageren binnen 2 werkdagen.
