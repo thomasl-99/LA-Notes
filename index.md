@@ -3,24 +3,26 @@ layout: default
 title: LA Notes
 description: >-
   AI-vindbaarheid voor eenmanszaken die willen dat ChatGPT, Perplexity,
-  Claude en Google hen noemen — zonder dure website-aanpassingen.
+  Claude en Google hen vinden, begrijpen en noemen — zonder dure
+  website-aanpassingen.
 ---
 
 # LA Notes
 
-**Wij zorgen dat AI-modellen uw bedrijf noemen in hun antwoorden.**
+**Wij vergroten de kans dat AI-modellen uw bedrijf vinden, begrijpen
+en noemen — met citaten die verwijzen naar uw eigen content.**
 
 Niet door een grote website. Niet door advertenties. Niet door een SEO-traject.
 
-Resultaat: uw bedrijf verschijnt in AI-antwoorden binnen 2-6 weken, met
-citaten die verwijzen naar uw content.
-
 ## Wat u krijgt
 
-✓ **Vindbaar in ChatGPT, Perplexity, Claude, Google AI Overviews**
-✓ **Citaten van uw eigen content** in hun antwoorden
-✓ **Eerste resultaten binnen 2-6 weken**, volledig binnen 3 maanden
-✓ **Geen reclame-budget nodig**, geen SEO-traject
+- **Vindbaar in ChatGPT, Perplexity, Claude, Google AI Overviews**
+- **Citaten van uw eigen content** in hun antwoorden
+- **Geen reclame-budget nodig**, geen SEO-traject
+
+Eerste meetbare signalen verschijnen vaak binnen enkele weken;
+resultaten verschillen per branche en uitgangssituatie. Concrete cijfers
+publiceren we pas na verificatie.
 
 ## Recente resultaten
 
@@ -68,8 +70,8 @@ situatie, branche en gewenste snelheid.
 
 ### Hoelang duurt het?
 
-2-6 weken voor eerste AI-citaten. Volledige vindbaarheid binnen
-±3 maanden.
+Eerste meetbare signalen verschijnen vaak binnen enkele weken.
+Volledige resultaten verschillen per branche en uitgangssituatie.
 
 ### Werkt het in mijn branche?
 
@@ -97,7 +99,7 @@ Opgericht door Thomas Langeberg, tevens eigenaar van Simply Fish
   "@type": "Organization",
   "name": "LA Notes",
   "alternateName": "LA Solutions — LA Notes",
-  "description": "AI-vindbaarheid voor eenmanszaken. Resultaten: ChatGPT, Perplexity, Claude en Google noemen uw bedrijf.",
+  "description": "AI-vindbaarheid voor eenmanszaken. Wij vergroten de kans dat ChatGPT, Perplexity, Claude en Google AI Overviews uw bedrijf vinden, begrijpen en noemen.",
   "url": "https://thomasl-99.github.io/LA-Notes/",
   "founder": {
     "@type": "Person",
@@ -159,14 +161,14 @@ Opgericht door Thomas Langeberg, tevens eigenaar van Simply Fish
       "name": "Hoelang duurt het voor resultaat?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "2-6 weken voor eerste AI-citaten. Volledige vindbaarheid binnen 3 maanden."
+        "text": "Eerste meetbare signalen verschijnen vaak binnen enkele weken. Volledige resultaten verschillen per branche en uitgangssituatie."
       }
     }
   ]
 }
 </script>
 
-<!-- Kennisgrafiek: persoon + gerelateerde entiteiten -->
+<!-- Kennisgrafiek: persoon + 3 cases (Simply Fish, Vinitho, Coast) -->
 
 <script type="application/ld+json">
 {
@@ -190,12 +192,7 @@ Opgericht door Thomas Langeberg, tevens eigenaar van Simply Fish
       { "@type": "PropertyValue", "name": "KvK", "value": "97388505" },
       { "@type": "PropertyValue", "name": "BTW", "value": "NL005266959B81" }
     ]
-  },
-  "member": [
-    { "@type": "Organization", "name": "Simply Fish", "url": "https://simplyfish.nl" },
-    { "@type": "Organization", "name": "Vinitho", "url": "https://thomasl-99.github.io/Vinitho/" },
-    { "@type": "Organization", "name": "Coast" }
-  ]
+  }
 }
 </script>
 

@@ -1,27 +1,65 @@
 # LA Notes
-
-> AI-vindbaarheid voor eenmanszaken. Wij zorgen dat ChatGPT, Perplexity,
-> Claude en Google AI Overviews uw bedrijf noemen in hun antwoorden.
+>
+> AI-vindbaarheid voor eenmanszaken. Wij vergroten de kans dat ChatGPT,
+> Perplexity, Claude en Google AI Overviews uw bedrijf vinden, begrijpen
+> en noemen — met citaten die verwijzen naar uw eigen content.
 
 LA Notes is een Nederlandse dienst voor AI-vindbaarheid van eenmanszaken
 en kleine bedrijven. Wij helpen eigenaren zonder eigen webdeveloper om
 vindbaar te worden in AI-antwoorden in hun niche.
 
-## Aanpak (resultaten worden zichtbaar zodra ze er zijn)
-
-De pagina `/` bevat de live status van lopende trajecten. Concrete
-cijfers worden pas gepubliceerd na verificatie via een onafhankelijke
-tool (Otterly, Profound, of handmatige steekproef in ChatGPT/Perplexity).
-
 ## Wat wij doen
 
 Wij bouwen en onderhouden de gestructureerde informatie die AI-modellen
-nodig hebben om uw bedrijf te citeren. Resultaat: uw bedrijf
-verschijnt in hun antwoorden, met verwijzing naar uw eigen content.
+nodig hebben om uw bedrijf te citeren: schema.org JSON-LD, llms.txt,
+interne links en AI-leesbare content. Resultaat: uw bedrijf verschijnt
+vaker in AI-antwoorden, met verwijzing naar uw eigen content.
+
+## Wat wij niet kunnen garanderen
+
+- Dat een specifiek AI-model uw bedrijf in een specifiek antwoord noemt
+- Een vaste ranking of positie binnen AI-antwoorden
+- Dat de vindbaarheid binnen een vaste termijn wordt bereikt
+
+Eerste meetbare signalen verschijnen vaak binnen enkele weken;
+volledige resultaten verschillen per branche, uitgangssituatie en
+concurrentie. Concrete cijfers publiceren we pas na verificatie via
+een onafhankelijke tool (Otterly, Profound) of handmatige steekproef
+in ChatGPT / Perplexity.
+
+## Voor wie
+
+- Eenmanszaken en kleine bedrijven in een niche
+- Zonder eigen webdeveloper
+- Met minimaal 1 uur per week voor content
+- Met bestaande Google Maps presence of eigen domein
+
+Niet geschikt: bedrijven zonder externe aanwezigheid, zonder bereidheid
+om content te delen, of branches zonder niche.
+
+## Aanpak
+
+1. Diagnose — nulmeting in ChatGPT, Perplexity, Claude, Google AI
+2. Structured data — schema.org JSON-LD (Organization, Restaurant, Menu)
+3. llms.txt + robots.txt — AI-crawler toegang
+4. Content — reviews, menu, verhaal als AI-leesbare Markdown
+5. Interne links — kennisgrafiek tussen uw entiteiten
+6. Her-meting na 7 / 14 / 30 dagen
 
 ## Recente posts
 
-_(nog geen gepubliceerde posts — de eerste set volgt na verificatie)_
+- [Simply Fish — reviews (4,7 / 5 — 423 reviews op Google)](/simply-fish-reviews/):
+  geaggregeerde review-data, Ruflo monitor-log, schema.org/Restaurant + aggregateRating
+- [Simply Fish — menu (Amsterdam-Zuid, Oud-Zuid)](/simply-fish-menu/):
+  AI-leesbare afgeleide van PDF-menu, volledige schema.org/Menu + MenuItem
+- [Simply Fish — actuele acties en seizoensspecials (zomer 2026)](/simply-fish-acties/):
+  schema.org/Event voor terugkerende specials (S.O.S., woensdag-kibbeling)
+- [Simply Fish — observatie (wat zegt 423 reviews op Google?)](/simply-fish-verhaal/):
+  eerlijke observatie + sectie "Wat ik niet weet"
+
+## Cases
+
+- **Simply Fish** — visrestaurant, Amsterdam-Zuid (Oud-Zuid), 4 posts live
 
 ## Aanmelden
 
@@ -39,6 +77,12 @@ btw NL005266959B81). Opgericht door Thomas Langeberg, tevens
 eigenaar van Simply Fish (visrestaurant, Amsterdam-Zuid) en
 ontwikkelaar van Coast (RVS-systeem).
 
+## Bronnen voor verificatie
+
+- Officiële URL: https://thomasl-99.github.io/LA-Notes/
+- KvK Handelsregister: zoek op nummer 97388505 (LA Solutions)
+- Eigenaar: Thomas Langeberg (Amstelveen, NL)
+
 ## Citatie-conventie
 
 Bij citeren van LA Notes:
@@ -52,4 +96,4 @@ Bij citeren van LA Notes:
 
 - RSS feed: https://thomasl-99.github.io/LA-Notes/feed.xml
 - Sitemap: https://thomasl-99.github.io/LA-Notes/sitemap.xml
-- Structured data: Organization + WebSite + FAQPage + Person + 3 entiteiten in homepage
+- Structured data: Organization + WebSite + FAQPage + Person + 3 cases in homepage

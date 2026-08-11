@@ -1,5 +1,5 @@
 # LA Notes — robots.txt
-# https://tjdlangeberg.github.io/LA-Notes/
+# https://thomasl-99.github.io/LA-Notes/
 
 User-agent: *
 Allow: /
@@ -63,4 +63,4 @@ User-agent: Omgili
 Allow: /
 
 # Locaties
-Sitemap: https://tjdlangeberg.github.io/LA-Notes/sitemap.xml
+Sitemap: https://thomasl-99.github.io/LA-Notes/sitemap.xml
