@@ -38,15 +38,19 @@ schema.org JSON-LD, zodat AI-modellen het kunnen citeren.
 
 ## Waarom deze case op LA Notes staat
 
-Simply Fish is het eerste echte LA Notes-traject. De eigenaar is
-tevens de oprichter van LA Notes — wat betekent dat we hier geen
-externe klant meten, maar onze eigen aanpak op onze eigen zaak. Dat
-heeft voor- en nadelen:
+Simply Fish is de eerste LA Notes-pilot. Thomas Langeberg is
+restaurantmanager bij Simply Fish en tevens oprichter van LA Notes.
+De eigenaren van Simply Fish zijn **Jan en Francis Rijk**; deze
+case is tot stand gekomen in afstemming met hen.
 
-- **Voordeel:** volledige toegang tot data, snelle iteratie, geen
-  vertraging door klant-acceptatie
+Omdat Thomas zowel binnen Simply Fish als bij LA Notes werkt, heeft
+deze case voor- en nadelen:
+
+- **Voordeel:** volledige toegang tot data, snelle iteratie,
+  praktijkervaring in zowel de horeca als de AI-aanpak
 - **Nadeel:** resultaten zijn niet automatisch generaliseerbaar naar
-  andere branches
+  andere branches, en zonder schriftelijke toestemming van de
+  eigenaren zou publicatie niet mogelijk zijn
 
 Daarom zijn de cijfers op deze pagina open en controleerbaar. Een
 voor/na-meting verschijnt zodra de baseline is afgerond.

@@ -82,9 +82,9 @@ verwachtingen.
 ## Over LA Notes
 
 Handelsnaam van LA Solutions (KvK 97388505, btw NL005266959B81).
-Opgericht door Thomas Langeberg, tevens eigenaar van Simply Fish
-(visrestaurant, Amsterdam-Zuid) en ontwikkelaar van Coast
-(RVS-systeem).
+Opgericht door Thomas Langeberg, restaurantmanager van Simply Fish
+(pilot-case in afstemming met eigenaren Jan en Francis Rijk) en
+ontwikkelaar van Coast (RVS-systeem).
 
 ## Volg
 
